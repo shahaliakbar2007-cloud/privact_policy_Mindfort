@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — MindFort</title>
+  <style>
+    :root {
+      --bg: #f6f8fc;
+      --card: #ffffff;
+      --text: #181d27;
+      --muted: #535d72;
+      --accent: #3b5bdb;
+      --accent-soft: #eef2ff;
+      --border: #e2e7f0;
+      --highlight-bg: #f0f5ff;
+      --highlight-border: #3b5bdb;
+      --table-header: #f3f6fc;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0e121b;
+        --card: #161c2a;
+        --text: #eef1f8;
+        --muted: #a6b0c7;
+        --accent: #748ffc;
+        --accent-soft: #1f2942;
+        --border: #273248;
+        --highlight-bg: #19233a;
+        --highlight-border: #748ffc;
+        --table-header: #1c2436;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px 16px 64px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 44px 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 24px 18px;
+      }
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 22px;
+      margin-bottom: 28px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 4px 11px;
+      border-radius: 999px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 2.05rem;
+      line-height: 1.2;
+    }
+
+    .meta {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .toc {
+      background: var(--table-header);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin: 22px 0 30px;
+    }
+
+    .toc-title {
+      margin: 0 0 10px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .toc ol {
+      margin: 0;
+      padding-left: 20px;
+      columns: 2;
+      column-gap: 28px;
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 640px) {
+      .toc ol {
+        columns: 1;
+      }
+    }
+
+    .toc li {
+      margin-bottom: 6px;
+    }
+
+    h2 {
+      margin-top: 36px;
+      margin-bottom: 12px;
+      font-size: 1.32rem;
+      color: var(--text);
+      scroll-margin-top: 20px;
+    }
+
+    h3 {
+      margin-top: 20px;
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+      color: var(--text);
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 0 0 16px;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .disclosure-box {
+      background: var(--highlight-bg);
+      border-left: 4px solid var(--highlight-border);
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin: 18px 0 22px;
+    }
+
+    .disclosure-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 16px 0 24px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--table-header);
+      font-weight: 700;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.88em;
+      background: var(--accent-soft);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <span class="badge">Privacy Policy &amp; Google Play Data Safety</span>
+      <h1>Privacy Policy for MindFort</h1>
+      <p class="meta">
+        <strong>Developer:</strong> Fort Tech &nbsp;|&nbsp;
+        <strong>Application:</strong> MindFort (<code>com.aistudio.mindfort.habits</code>) &nbsp;|&nbsp;
+        <strong>Last Updated:</strong> November 20, 2026
+      </p>
+    </header>
+
+    <p>
+      Fort Tech ("we," "our," or "us") built <strong>MindFort</strong> as a personal habit-building,
+      self-discipline, and recovery coaching application. Because habit logs, journals, and coaching
+      conversations are deeply personal, we are committed to collecting only what is needed to run
+      MindFort reliably, securing your data, and keeping you in control of your information.
+    </p>
+    <p>
+      This Privacy Policy explains what information we collect, how we use it, which third-party
+      services power MindFort, how optional device permissions work, and how you can exercise your
+      privacy and data deletion rights.
+    </p>
+
+    <nav class="toc" aria-label="Table of Contents">
+      <p class="toc-title">Contents</p>
+      <ol>
+        <li><a href="#data-collected">Information We Collect</a></li>
+        <li><a href="#data-safety-summary">Data Safety Summary</a></li>
+        <li><a href="#how-we-use">How We Use Your Information</a></li>
+        <li><a href="#permissions">Device Permissions &amp; Accessibility Disclosure</a></li>
+        <li><a href="#third-party">Third-Party Services &amp; SDKs</a></li>
+        <li><a href="#security-retention">Data Security &amp; Retention</a></li>
+        <li><a href="#user-rights">Your Privacy Rights &amp; Data Deletion</a></li>
+        <li><a href="#children">Children's Privacy</a></li>
+        <li><a href="#changes">Changes to This Policy</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="data-collected">1. Information We Collect</h2>
+
+    <h3>a. Account &amp; Authentication Information</h3>
+    <p>
+      When you sign in to MindFort with Google Sign-In (using Android Jetpack Credential Manager and
+      Firebase Authentication), we collect:
+    </p>
+    <ul>
+      <li>Your unique Firebase User ID (UID)</li>
+      <li>Your email address</li>
+      <li>Your display name and profile image URL (if provided by your Google account)</li>
+    </ul>
+
+    <h3>b. Habit-Building, Journaling &amp; Coaching Data</h3>
+    <p>
+      To power habit tracking, progress streaks, and personalized coaching across sessions and
+      devices, we store the content you choose to record in MindFort:
+    </p>
+    <ul>
+      <li>Habit streaks, daily check-in records, completion timestamps, and milestone progress</li>
+      <li>Private journal entries, mood logs, and reflection notes</li>
+      <li>In-app companion progression and custom app settings (such as light/dark theme preference)</li>
+      <li>Messages and prompts you submit to the in-app AI habit coach</li>
+    </ul>
+
+    <h3>c. Subscription &amp; Billing Metadata</h3>
+    <p>
+      All paid subscriptions (MindFort Pro) are billed and managed solely by
+      <strong>Google Play Billing</strong>. We do <strong>not</strong> collect, process, or store
+      your credit card numbers, billing addresses, or payment credentials. To verify and restore your
+      Pro entitlement, our backend stores only Google Play purchase tokens, subscription product IDs,
+      base plan/offer identifiers, and entitlement status (active, trial, grace period, or expired).
+    </p>
+
+    <h3>d. Advertising &amp; Consent Data (Free Tier Only)</h3>
+    <p>
+      For free-tier users, MindFort displays ads using <strong>Google AdMob</strong> and manages
+      regional privacy consent through Google's <strong>User Messaging Platform (UMP)</strong>.
+      Depending on your consent choices, AdMob may collect your Android Advertising ID, IP address,
+      coarse location, device model, and ad interaction metrics for ad delivery, frequency capping,
+      and fraud prevention. Subscribers to MindFort Pro do not see ads.
+    </p>
+
+    <h3>e. App Integrity &amp; Security Diagnostics</h3>
+    <p>
+      MindFort uses <strong>Firebase App Check</strong> to verify that requests to our backend and
+      AI coaching services originate from authentic installations of MindFort, helping prevent abuse
+      and unauthorized access.
+    </p>
+
+    <h2 id="data-safety-summary">2. Data Safety Summary</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Data Category</th>
+            <th>Examples</th>
+            <th>Primary Purpose</th>
+            <th>Sold to Third Parties?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Account Info</strong></td>
+            <td>UID, email address, display name, profile photo URL</td>
+            <td>Authentication, account management, cloud sync</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td><strong>Habit &amp; Journal Data</strong></td>
+            <td>Streaks, check-ins, journal notes, mood logs, settings</td>
+            <td>Core habit-building functionality &amp; cross-device sync</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td><strong>AI Coaching Prompts</strong></td>
+            <td>Text submitted to the habit/urge coach</td>
+            <td>Generating real-time coaching responses</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td><strong>Purchase History</strong></td>
+            <td>Google Play purchase token, product ID, subscription state</td>
+            <td>Server-side subscription verification &amp; restoration</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td><strong>Advertising Data (Free Tier)</strong></td>
+            <td>Advertising ID, ad interaction data (subject to UMP consent)</td>
+            <td>Displaying ads on the free tier</td>
+            <td>No (processed by Google AdMob per consent)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="how-we-use">3. How We Use Your Information</h2>
+    <ul>
+      <li><strong>Core Habit Tracking &amp; Sync:</strong> Save and synchronize your streaks, check-ins, journals, and milestones securely across your devices.</li>
+      <li><strong>Personalized Coaching:</strong> Process your coaching prompts via Firebase AI Logic to deliver supportive habit-building and urge-management guidance.</li>
+      <li><strong>Subscription Fulfillment:</strong> Verify active Google Play subscriptions, unlock MindFort Pro features, and restore purchases when you switch or reinstall devices.</li>
+      <li><strong>Advertising &amp; Consent Compliance:</strong> Serve free-tier advertisements while honoring your privacy choices under GDPR, UK GDPR, and CCPA/CPRA via Google UMP.</li>
+      <li><strong>Security &amp; Abuse Prevention:</strong> Protect user accounts and backend APIs using Firebase Authentication, per-user Firestore security rules, and Firebase App Check.</li>
+    </ul>
+    <p>
+      We never sell your personal information, habit records, or journal entries.
+    </p>
+
+    <h2 id="permissions">4. Device Permissions &amp; Accessibility Service Disclosure</h2>
+    <div class="disclosure-box">
+      <p>
+        <strong>Prominent Disclosure — Android Accessibility Service (<code>BIND_ACCESSIBILITY_SERVICE</code>):</strong>
+        MindFort includes an optional <strong>Content Shield</strong> feature designed to help you
+        stay on track with your habit goals. When you explicitly enable this feature, MindFort uses
+        Android's Accessibility Service API strictly <strong>on-device</strong> to detect explicit
+        content or user-configured trigger keywords in other apps and browsers so it can display a
+        protective blur and coaching intervention screen.
+      </p>
+      <p>
+        <strong>Strict On-Device Privacy Commitment:</strong> MindFort does <strong>NOT</strong>
+        collect, record, log, transmit off-device, or share any screen text, keystrokes, browsing
+        history, private messages, or Accessibility Service data with Fort Tech or any third party.
+        All detection runs locally on your device, is optional, and can be turned off at any time in
+        Android Settings &rarr; Accessibility.
+      </p>
+    </div>
+
+    <p>Additional Android permissions used by MindFort:</p>
+    <ul>
+      <li><strong>Display Over Other Apps (<code>SYSTEM_ALERT_WINDOW</code>):</strong> Displays the protective blur and coaching intervention overlay when Content Shield triggers.</li>
+      <li><strong>Foreground Service &amp; Notifications (<code>FOREGROUND_SERVICE</code>, <code>POST_NOTIFICATIONS</code>):</strong> Keeps Content Shield active when enabled and delivers habit reminders and check-in alerts.</li>
+      <li><strong>Internet &amp; Boot Completed (<code>INTERNET</code>, <code>RECEIVE_BOOT_COMPLETED</code>):</strong> Syncs account data with Firebase, validates Google Play subscriptions, and restarts active shield protection after a device reboot if enabled.</li>
+      <li><strong>Advertising ID (<code>AD_ID</code>):</strong> Used by Google AdMob on the free tier subject to your consent preferences.</li>
+    </ul>
+
+    <h2 id="third-party">5. Third-Party Services &amp; SDKs</h2>
+    <p>
+      MindFort relies on trusted Google and Firebase infrastructure. These providers process data
+      under their own privacy policies and security standards:
+    </p>
+    <ul>
+      <li>
+        <strong>Firebase (Google LLC)</strong> — Firebase Authentication, Cloud Firestore, Cloud
+        Functions, Firebase App Check, and Firebase AI Logic:
+        <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">
+          https://firebase.google.com/support/privacy
+        </a>
+      </li>
+      <li>
+        <strong>Google Play Services &amp; Google Play Billing</strong> — Account sign-in, in-app
+        subscription billing, and purchase verification:
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+          https://policies.google.com/privacy
+        </a>
+      </li>
+      <li>
+        <strong>Google AdMob &amp; User Messaging Platform (UMP)</strong> — Ad serving and privacy
+        consent management for free-tier users:
+        <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">
+          https://support.google.com/admob/answer/6128543
+        </a>
+      </li>
+    </ul>
+
+    <h2 id="security-retention">6. Data Security &amp; Retention</h2>
+    <ul>
+      <li><strong>Encryption in Transit:</strong> All network communication between MindFort and Firebase/Google Play servers is encrypted using HTTPS/TLS.</li>
+      <li><strong>Access Controls:</strong> Cloud Firestore is protected by strict, authenticated per-user security rules so only your signed-in account can access your personal habit and journal data.</li>
+      <li><strong>Retention:</strong> We retain your account and habit records only while your account remains active or until you request deletion. Local preferences stored via Jetpack DataStore remain on your device until you clear app storage or uninstall MindFort.</li>
+    </ul>
+
+    <h2 id="user-rights">7. Your Privacy Rights &amp; Account / Data Deletion</h2>
+    <p>
+      Depending on your location (including the EEA, UK under GDPR, and California under CCPA/CPRA),
+      you have the right to:
+    </p>
+    <ul>
+      <li><strong>Access &amp; Portability:</strong> Request a copy of the personal data associated with your MindFort account.</li>
+      <li><strong>Correction:</strong> Update or correct inaccurate habit records or profile details directly in the app or by contacting us.</li>
+      <li><strong>Deletion:</strong> Request permanent deletion of your MindFort account and all associated cloud data.</li>
+      <li><strong>Withdraw Consent &amp; Manage Ads:</strong> Revoke optional permissions (Accessibility, Overlay, Notifications) in Android Settings at any time, or reset/limit your Advertising ID in Android Settings &rarr; Privacy &rarr; Ads.</li>
+    </ul>
+
+    <div class="disclosure-box">
+      <p>
+        <strong>How to Delete Your MindFort Account &amp; Data:</strong>
+        To permanently delete your account and all cloud-stored data (profile information, streaks,
+        daily check-ins, journal entries, and subscription records), send an email to
+        <a href="mailto:shahaliakbar2007@gmail.com?subject=MindFort%20Account%20Deletion%20Request">
+          shahaliakbar2007@gmail.com
+        </a>
+        from the email address linked to your MindFort account with the subject line
+        <em>"MindFort Account Deletion Request"</em>. We will verify your request and permanently
+        delete your account and associated data within <strong>30 days</strong>. Please note that
+        active Google Play subscriptions must be canceled directly in Google Play Store &rarr;
+        Payments &amp; subscriptions.
+      </p>
+    </div>
+
+    <h2 id="children">8. Children's Privacy</h2>
+    <p>
+      MindFort is not directed to children under the age of 13 (or the applicable age of digital
+      consent in your country), and we do not knowingly collect personal information from children.
+      If you believe a child has provided personal data through MindFort, please contact us and we
+      will promptly delete it.
+    </p>
+
+    <h2 id="changes">9. Changes to This Privacy Policy</h2>
+    <p>
+      We may update this Privacy Policy periodically to reflect new features, legal requirements, or
+      Google Play policy updates. When we make changes, we will revise the "Last Updated" date at
+      the top of this page. Continued use of MindFort after updates take effect constitutes
+      acceptance of the revised policy.
+    </p>
+
+    <h2 id="contact">10. Contact Us</h2>
+    <p>
+      If you have questions about this Privacy Policy, your data, or how MindFort protects your
+      privacy, please contact us:
+    </p>
+    <p>
+      <strong>Developer:</strong> Fort Tech<br />
+      <strong>App:</strong> MindFort (<code>com.aistudio.mindfort.habits</code>)<br />
+      <strong>Email:</strong>
+      <a href="mailto:shahaliakbar2007@gmail.com">shahaliakbar2007@gmail.com</a>
+    </p>
+
+    <footer>
+      &copy; 2026 Fort Tech. All rights reserved. MindFort Privacy Policy.
+    </footer>
+  </main>
+</body>
+</html>
